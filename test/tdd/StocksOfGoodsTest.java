@@ -11,6 +11,7 @@ class StocksOfGoodsTest {
         boolean stockOfGoodsAreEmpty = stocksOfGoods.stocksOfGoodsInArrayIsEmpty("true");
         assertTrue(stockOfGoodsAreEmpty);
     }
+
     @Test
     public void testElementsInTheArrayIsEmpty(){
         StocksOfGoods stocksOfGoods = new StocksOfGoods();
@@ -18,13 +19,15 @@ class StocksOfGoodsTest {
         String elementsInArrayIsEmpty = stocksOfGoods.elementsInArrayIsEmpty(elementsInArray);
         assertEquals("[]",elementsInArrayIsEmpty);
     }
+
     @Test
     public void testElementsInTheArrayIsNull(){
         StocksOfGoods stocksOfGoods = new StocksOfGoods();
         int[] elementsInArray = {};
         String elementsInArrayIsNull = stocksOfGoods.elementsInArrayIsNull(elementsInArray);
-        assertEquals("null",elementsInArrayIsNull);
+        assertEquals(null,elementsInArrayIsNull);
     }
+
     @Test
     public void testASingleElement() {
         StocksOfGoods stocksOfGoods = new StocksOfGoods();
@@ -33,6 +36,7 @@ class StocksOfGoodsTest {
         String possibleProfitForSingleElement = stocksOfGoods.possisibleProfitForSingleStockOfGoods(costOfTheStockOfGoods, revenue);
         assertEquals("[20]", possibleProfitForSingleElement);
     }
+
     @Test
     public void testPossibleProfitOfTheStockOfGoods() {
         StocksOfGoods stocksOfGoods = new StocksOfGoods();
@@ -41,6 +45,7 @@ class StocksOfGoodsTest {
         String possiblePriceOfGoods = stocksOfGoods.possisibleProfitOfGoods(costOfTheStockOfGoods,revenue);
         assertEquals("[90, 200, 300, 400, 0, 0, 210, 0, 290, 120]", possiblePriceOfGoods);
     }
+
     @Test
     public void testMinimumPriceOfTheStockOfGoods() {
         StocksOfGoods stocksOfGoods = new StocksOfGoods();
@@ -49,6 +54,7 @@ class StocksOfGoodsTest {
         int maximumPriceOfGoods = stocksOfGoods.maximumProfitOfGoods(costOfTheStockOfGoods,revenue);
         assertEquals(410, maximumPriceOfGoods);
     }
+
     @Test
     public void testNoPossibleProfitOfTheStockOfGoods() {
         StocksOfGoods stocksOfGoods = new StocksOfGoods();
