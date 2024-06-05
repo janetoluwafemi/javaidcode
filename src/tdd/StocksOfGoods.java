@@ -9,6 +9,20 @@ public class StocksOfGoods {
         }
         return false;
     }
+    public String elementsInArrayIsEmpty(int[] goodsPrice){
+        for(int count = 0; count < goodsPrice.length; count++){
+        }
+        String result = Arrays.toString(goodsPrice);
+            return result;
+    }
+    public String elementsInArrayIsNull(int[] goodsPrice){
+        for(int count = 0; count < goodsPrice.length; count++){
+            if(goodsPrice[count] == 0){
+                return null;
+            }
+        }
+        return null;
+    }
     public String possisibleProfitForSingleStockOfGoods(int[] goodsPrice,int revenue){
         int[] profit = new int[goodsPrice.length];
         for(int count = 0; count < goodsPrice.length; count++){

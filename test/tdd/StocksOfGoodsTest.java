@@ -12,12 +12,27 @@ class StocksOfGoodsTest {
         assertTrue(stockOfGoodsAreEmpty);
     }
     @Test
-    public void testASingleElement(){
+    public void testElementsInTheArrayIsEmpty(){
         StocksOfGoods stocksOfGoods = new StocksOfGoods();
-        int[] costOfTheStockOfGoods = [40];
+        int[] elementsInArray = {};
+        String elementsInArrayIsEmpty = stocksOfGoods.elementsInArrayIsEmpty(elementsInArray);
+        assertEquals("[]",elementsInArrayIsEmpty);
+    }
+    @Test
+    public void testElementsInTheArrayIsNull(){
+        StocksOfGoods stocksOfGoods = new StocksOfGoods();
+        int[] elementsInArray = {};
+        String elementsInArrayIsNull = stocksOfGoods.elementsInArrayIsNull(elementsInArray);
+        assertEquals("null",elementsInArrayIsNull);
+    }
+    @Test
+    public void testASingleElement() {
+        StocksOfGoods stocksOfGoods = new StocksOfGoods();
+        int[] costOfTheStockOfGoods = {40};
         int revenue = 60;
-        String possibleProfitForSingleElement = stocksOfGoods.possisibleProfitForSingleStockOfGoods(costOfTheStockOfGoods,revenue)
-    }   assert
+        String possibleProfitForSingleElement = stocksOfGoods.possisibleProfitForSingleStockOfGoods(costOfTheStockOfGoods, revenue);
+        assertEquals("[20]", possibleProfitForSingleElement);
+    }
     @Test
     public void testPossibleProfitOfTheStockOfGoods() {
         StocksOfGoods stocksOfGoods = new StocksOfGoods();
