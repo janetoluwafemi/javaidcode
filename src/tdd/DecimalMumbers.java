@@ -1,3 +1,5 @@
+package tdd;
+
 public class DecimalMumbers {
     public String decimalNumberTodecimalMumbers(String number){
         int result = 0;

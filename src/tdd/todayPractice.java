@@ -1,3 +1,5 @@
+package tdd;
+
 public class todayPractice {
         public static void main(String[] args) {
             int[] firstNumbers = new int[]{2, 4, 3};

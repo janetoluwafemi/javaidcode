@@ -1,3 +1,5 @@
+package tdd;
+
 public class Palindrome {
     public boolean checkPalindrome(String word) {
         char result = '\u0000';

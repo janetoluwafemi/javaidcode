@@ -1,3 +1,5 @@
+package tdd;
+
 public class Assignment {
     public int average(int[] numbers) {
         int average_numbers = 0;

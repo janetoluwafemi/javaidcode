@@ -1,3 +1,5 @@
+package tdd;
+
 public class CountingStrings {
     public int lengthOfTheWord(String value){
         int length = 0;
